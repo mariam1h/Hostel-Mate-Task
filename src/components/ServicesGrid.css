@@ -1,0 +1,220 @@
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 60px;
+    grid-row-gap: 48px;
+    max-width: 1400px;
+    margin: 64px auto 0 auto; 
+    padding: 48px 0;
+    border-radius: 40px;
+  }
+  
+  .service-card {
+    border-radius: 40px;
+    padding: 32px 48px 32px 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 5px 0 0 #000;
+    background: #fff;
+    border: 1px solid #000;
+    position: relative;
+    overflow: hidden;
+    height: 80%;
+  }
+  
+  .service-card.light {
+    background: #F3F3F3;
+    color: #18191F;
+  }
+  
+  .service-card.green {
+    background: #C6FF6B;
+    color: #18191F;
+  }
+  
+  .service-card.dark {
+    background: #18191F;
+    color: #fff;
+  }
+  
+  .service-card-inner {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    align-items: stretch;
+    justify-content: space-between;
+  }
+  
+  .service-card-left {
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    min-width: 0;
+    margin-bottom: 0;
+  }
+  
+  .service-card-header {
+    margin-bottom: 32px;
+  }
+  
+  .service-card-title {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 1.1;
+    background: #C6FF6B;
+    color: #18191F;
+    border-radius: 12px;
+    padding: 8px 16px;
+    display: inline-block;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  }
+  
+  .service-card.green .service-card-title {
+    background: #fff;
+    color: #18191F;
+  }
+  
+  .service-card-right {
+    flex: 1 1 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    min-width: 0;
+  }
+  
+  .service-card-img {
+    width: 200px;
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+    display: block;
+  }
+  
+  .service-card-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: inherit;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1.35rem;
+    margin-top: 40px;
+    transition: color 0.2s;
+  }
+  
+  .service-card-link:hover {
+    color: #C6FF6B;
+  }
+  
+  .service-card.dark .service-card-link:hover {
+    color: #C6FF6B;
+  }
+  
+  .service-card-link:hover .service-card-arrow svg path {
+    stroke: #7bbd1e;
+  }
+  
+  .service-card-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: #18191F;
+    color: #C6FF6B;
+    border-radius: 50%;
+    font-size: 1.6em;
+    flex-shrink: 0;
+    margin-right: 0;
+  }
+  
+  .service-card.dark .service-card-arrow {
+    background: #fff;
+    color: #18191F;
+  }
+  
+  .service-card.dark .service-card-arrow svg circle {
+    fill: #fff;
+  }
+  
+  .service-card.dark .service-card-arrow svg path {
+    stroke: #7bbd1e;
+  }
+  
+  .service-card-arrow svg circle {
+    fill: #18191F;
+  }
+  
+  .service-card-arrow svg path {
+    stroke: #C6FF6B;
+  }
+  
+  .highlight {
+    background: #C6FF6B;
+    border-radius: 12px;
+    padding: 0 4px;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+    display: inline;
+  }
+  
+  .service-card.green .highlight {
+    background: #fff;
+  }
+  
+  .service-card.dark .service-card-link {
+    color: #fff;
+  }
+  
+  .service-card.green .service-card-link:hover {
+    color: #fff;
+  }
+  
+  .service-card.green .service-card-link:hover .service-card-arrow svg path {
+    stroke: #18191F;
+  }
+  
+  @media (max-width: 900px) {
+    .services-grid {
+      grid-template-columns: 1fr;
+      grid-column-gap: 0;
+      grid-row-gap: 16px;
+      max-width: 98vw;
+      padding: 24px 0;
+    }
+    .service-card {
+      padding: 32px 16px 24px 16px;
+      border-radius: 24px;
+    }
+    .service-card-inner {
+      flex-direction: column;
+      align-items: stretch;
+    }
+    .service-card-right {
+      justify-content: center;
+      margin-top: 24px;
+    }
+    .service-card-img {
+      width: 100%;
+      max-width: 220px;
+      margin: 0 auto;
+    }
+    .service-card-title {
+      font-size: 1.4rem;
+      padding: 6px 10px;
+      border-radius: 8px;
+    }
+    .service-card-link {
+      font-size: 1rem;
+      margin-top: 18px;
+    }
+    .service-card-arrow {
+      width: 28px;
+      height: 28px;
+      font-size: 1.1em;
+      margin-right: 4px;
+    }
+  }

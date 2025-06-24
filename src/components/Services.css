@@ -1,0 +1,29 @@
+.services-label-section {
+  padding: 48px 0 0 0;
+  margin-left: 120px;
+}
+.services-row {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+}
+.services-label {
+  background: #C6FF6B;
+  color: #18191F;
+  font-weight: 500;
+  font-size: 2.6rem;
+  border-radius: 16px;
+  padding: 8px 36px;
+  font-family: inherit;
+  display: inline-block;
+  letter-spacing: 0.01em;
+}
+.services-desc {
+  color: #18191F;
+  font-size: 1.1rem;
+  font-weight: 400;
+  max-width: 600px;
+  line-height: 1.5;
+  text-align: left;
+  font-family: inherit;
+} 

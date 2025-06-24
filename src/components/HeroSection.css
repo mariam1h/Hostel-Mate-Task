@@ -1,0 +1,103 @@
+.hero-section {
+  padding: 64px 0 32px 0;
+  background: #fff;
+  width: 100vw;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  gap: 48px;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  padding: 0 5vw;
+  margin: 0;
+}
+
+.hero-text {
+  flex: 1 1 420px;
+  text-align: left;
+  max-width: 480px;
+}
+
+.hero-text h1 {
+  font-size: 2.6rem;
+  font-weight: 700;
+  line-height: 1.15;
+  margin-bottom: 28px;
+  color: #111;
+}
+
+.hero-desc {
+  font-size: 1rem;
+  color: #222;
+  margin-bottom: 32px;
+  line-height: 1.5;
+}
+
+.hero-cta {
+  background: #191A23;
+  color: #fff;
+  border: none;
+  padding: 14px 32px;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.hero-cta.dark:hover {
+  background: #111216;
+}
+
+.hero-image {
+  flex: 1 1 350px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  min-width: 0;
+}
+
+.hero-image img {
+  max-width: 340px;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero-logos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 48px;
+  margin: 56px 0 0 0;
+  width: 100vw;
+  padding: 0 5vw;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+.brand-logo {
+  height: 32px;
+  filter: grayscale(1) brightness(0.6);
+  opacity: 0.85;
+  transition: filter 0.2s, opacity 0.2s;
+  vertical-align: middle;
+}
+.brand-logo:hover {
+  filter: none;
+  opacity: 1;
+}
+.logo-text {
+  font-size: 1.35rem;
+  color: #111;
+  font-family: 'Inter', 'Roboto', Arial, sans-serif;
+  font-weight: 700;
+  opacity: 0.85;
+  letter-spacing: 0.01em;
+  margin: 0 2px;
+  vertical-align: middle;
+} 

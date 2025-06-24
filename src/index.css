@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap');
+
+/* Global styles and reset */
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Space Grotesk', Arial, sans-serif;
+  background: #fff;
+  color: #222;
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+#root {
+  min-height: 100vh;
+  overflow-x: hidden;
+} 
